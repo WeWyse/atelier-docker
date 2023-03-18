@@ -1,0 +1,44 @@
+var express = require('express');
+
+var app = express();
+var http = require('http').createServer(app);
+
+var mysql = require('mysql');
+
+var con = mysql.createConnection({
+  host: "172.17.0.5",
+  user: "root",
+  password: "mypassword"
+});
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+  con.query("CREATE DATABASE mydb", function (err, result) {
+    if (err) throw err;
+    console.log("Database created");
+  });
+  con.query("USE mydb", function (err, result) {
+    if (err) throw err;
+    console.log("mydb is used");
+  });
+  var sql = "CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))";
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("Table customers created");
+  });
+
+});
+
+app.get('/', function(req, res) {
+  
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Atelier Docker Wewyse');
+
+});
+
+//app.listen(8080);
+http.listen(8080, function(){
+   console.log('listening on *:8080');
+});

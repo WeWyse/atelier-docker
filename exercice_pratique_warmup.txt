@@ -1,0 +1,21 @@
+docker pull nginx
+
+docker image ls  ( ou docker images )
+
+docker run --name nginx-service -v /Users/docker:/Users/docker -d -p 80:80 nginx
+
+docker ps -a ( ou docker container ls ) 
+
+docker logs nginx-service
+
+docker inspect nginx-service
+
+docker inspect nginx-service | grep -i IPAddress
+
+docker exec -ti nginx-service sh
+
+docker container stop nginx-service ( ou docker stop nginx-service )
+
+docker container rm nginx-service
+
+docker image rm nginx

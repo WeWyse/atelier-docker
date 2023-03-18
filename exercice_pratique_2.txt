@@ -1,0 +1,30 @@
+### DOCKERFILE ###
+
+docker build /Users/stephanelenglet/Documents/workspace/atelier-docker/nodejs --tag nodejs-v0
+
+(  !!!! remplacer /Users/stephanelenglet/Documents/workspace/atelier-docker/nodejs par votre path vers le Dockerfile nodejs )
+
+docker build /Users/stephanelenglet/Documents/workspace/atelier-docker/mysql --tag mysql-v0
+
+(  !!!! remplacer /Users/stephanelenglet/Documents/workspace/atelier-docker/mysql par votre path vers le Dockerfile mysql )
+
+docker images 
+
+docker run --name mysql-service-2 -v /Users/docker:/Users/docker -d -p --env="MYSQL_ROOT_PASSWORD=mypassword" mysql-v0
+
+>> Plus besoin d'aller ALTER / flush privileges !!!
+
+sortir du container avec : exit
+
+docker inspect mysql-service-2 | grep -i IPAdd ( noter la valeur IPAddress )
+
+docker run --name nodejs-service-2 -v /Users/docker:/Users/docker -d -p 8081:8080 <imageid node>
+
+docker exec -ti nodejs-service-2 sh
+
+>> Plus besoins faire l'enchainement des opérations manuelle de l'exo 1 sauf:
+
+>> vi index.js et remplacer dans le code par la valeur IPAddress récupéré plus haut
+
+docker container restart nodejs-service-2
+	 

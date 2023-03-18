@@ -1,0 +1,1633 @@
+Stopping docker-compose_app_1 ... 
+Stopping docker-compose_app_1 ... done
+Removing docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_mysql_server_1 ... done
+Removing docker-compose_app_1          ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-15 17:57:05+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 17:57:05+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-15 17:57:05+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 17:57:06+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-15T17:57:06.240382Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:06.240488Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-15T17:57:06.247555Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:06.729444Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:08.157461Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-15 17:57:10+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-15 17:57:10+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-15T17:57:11.352322Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:11.359230Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-15T17:57:11.443261Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:11.944790Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:12.415584Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:12.416101Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:12.418771Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:12.444533Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:12.444856Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-15 17:57:12+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-15 17:57:16+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 17:57:16+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-15T17:57:16.575784Z 11 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-15T17:57:17.830846Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15 17:57:18+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 17:57:18+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15T17:57:18.846732Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:18.850401Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-15T17:57:18.861206Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:19.118825Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:19.415337Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:19.415931Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:19.417609Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T17:57:19.456899Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[36mapp_1           |[0m listening on *:8080
+[36mapp_1           |[0m /usr/src/app/node_modules/mysql/lib/protocol/Parser.js:437
+[36mapp_1           |[0m       throw err; // Rethrow non-MySQL errors
+[36mapp_1           |[0m       ^
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+[36mapp_1           |[0m     at Sequence._packetToError (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+[36mapp_1           |[0m     at Handshake.ErrorPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+[36mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[36mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[36mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10)
+[36mapp_1           |[0m     at Protocol.write (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:88:28)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[36mapp_1           |[0m     at Socket.emit (node:events:512:28)
+[36mapp_1           |[0m     at addChunk (node:internal/streams/readable:324:12)
+[36mapp_1           |[0m     --------------------
+[36mapp_1           |[0m     at Protocol._enqueue (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+[36mapp_1           |[0m     at Protocol.handshake (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+[36mapp_1           |[0m     at Connection.connect (/usr/src/app/node_modules/mysql/lib/Connection.js:116:18)
+[36mapp_1           |[0m     at /usr/src/app/index.js:32:7
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at next (/usr/src/app/node_modules/express/lib/router/route.js:144:13)
+[36mapp_1           |[0m     at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:114:3)
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at /usr/src/app/node_modules/express/lib/router/index.js:284:15
+[36mapp_1           |[0m     at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:346:12) {
+[36mapp_1           |[0m   code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+[36mapp_1           |[0m   errno: 1251,
+[36mapp_1           |[0m   sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client',
+[36mapp_1           |[0m   sqlState: '08004',
+[36mapp_1           |[0m   fatal: true
+[36mapp_1           |[0m }
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Node.js v19.7.0
+[36mdocker-compose_app_1 exited with code 1
+[0mStopping docker-compose_mysql_server_1 ... 
+[33mmysql_server_1  |[0m 2023-03-15T17:57:19.457677Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15T18:00:53.810762Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-15T18:00:54.685329Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_mysql_server_1 ... done
+Removing docker-compose_app_1          ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-15 18:02:09+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 18:02:10+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-15 18:02:10+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 18:02:10+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-15T18:02:10.725545Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:10.725683Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-15T18:02:10.732496Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:11.089436Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:12.398711Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-15 18:02:15+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-15 18:02:15+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-15T18:02:15.412081Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:15.416210Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-15T18:02:15.441583Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:15.780406Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:16.129962Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:16.130284Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:16.131827Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:16.152481Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-15T18:02:16.153163Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15 18:02:16+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-15 18:02:19+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 18:02:19+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-15T18:02:19.956218Z 11 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-15T18:02:21.605667Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15 18:02:21+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 18:02:21+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15T18:02:22.207818Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:22.209144Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-15T18:02:22.217295Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:22.438787Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:22.671352Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:22.672192Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:22.674053Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T18:02:22.700017Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[36mapp_1           |[0m listening on *:8080
+[36mapp_1           |[0m /usr/src/app/node_modules/mysql/lib/protocol/Parser.js:437
+[36mapp_1           |[0m       throw err; // Rethrow non-MySQL errors
+[36mapp_1           |[0m       ^
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+[36mapp_1           |[0m     at Sequence._packetToError (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+[36mapp_1           |[0m     at Handshake.ErrorPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+[36mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[36mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[36mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10)
+[36mapp_1           |[0m     at Protocol.write (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:88:28)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[36mapp_1           |[0m     at Socket.emit (node:events:512:28)
+[36mapp_1           |[0m     at addChunk (node:internal/streams/readable:324:12)
+[36mapp_1           |[0m     --------------------
+[36mapp_1           |[0m     at Protocol._enqueue (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+[36mapp_1           |[0m     at Protocol.handshake (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+[36mapp_1           |[0m     at Connection.connect (/usr/src/app/node_modules/mysql/lib/Connection.js:116:18)
+[36mapp_1           |[0m     at /usr/src/app/index.js:32:7
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at next (/usr/src/app/node_modules/express/lib/router/route.js:144:13)
+[36mapp_1           |[0m     at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:114:3)
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at /usr/src/app/node_modules/express/lib/router/index.js:284:15
+[36mapp_1           |[0m     at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:346:12) {
+[36mapp_1           |[0m   code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+[36mapp_1           |[0m   errno: 1251,
+[36mapp_1           |[0m   sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client',
+[36mapp_1           |[0m   sqlState: '08004',
+[36mapp_1           |[0m   fatal: true
+[36mapp_1           |[0m }
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Node.js v19.7.0
+[36mdocker-compose_app_1 exited with code 1
+[0mStopping docker-compose_mysql_server_1 ... 
+[33mmysql_server_1  |[0m 2023-03-15T18:02:22.700623Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15T18:04:59.282920Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-15T18:04:59.976773Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mStopping docker-compose_mysql_server_1 ... done
+Removing docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_app_1          ... done
+Removing docker-compose_mysql_server_1 ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-15 18:05:26+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 18:05:27+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-15 18:05:27+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 18:05:27+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-15T18:05:27.795183Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:27.795292Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-15T18:05:27.802446Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:28.160313Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:29.306053Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-15 18:05:32+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-15 18:05:32+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-15T18:05:32.469453Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:32.473297Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-15T18:05:32.493955Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:32.807944Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:33.130997Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:33.131610Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:33.133223Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:33.156009Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-15T18:05:33.156713Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15 18:05:33+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-15 18:05:36+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 18:05:36+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-15T18:05:36.951154Z 11 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-15T18:05:38.614114Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15 18:05:38+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 18:05:38+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15T18:05:39.209553Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:39.211102Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-15T18:05:39.220784Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:39.456043Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:39.700985Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:39.701582Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:39.703061Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T18:05:39.729360Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[36mapp_1           |[0m listening on *:8080
+[36mapp_1           |[0m /usr/src/app/node_modules/mysql/lib/protocol/Parser.js:437
+[36mapp_1           |[0m       throw err; // Rethrow non-MySQL errors
+[36mapp_1           |[0m       ^
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+[36mapp_1           |[0m     at Sequence._packetToError (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+[36mapp_1           |[0m     at Handshake.ErrorPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+[36mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[36mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[36mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10)
+[36mapp_1           |[0m     at Protocol.write (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:88:28)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[36mapp_1           |[0m     at Socket.emit (node:events:512:28)
+[36mapp_1           |[0m     at addChunk (node:internal/streams/readable:324:12)
+[36mapp_1           |[0m     --------------------
+[36mapp_1           |[0m     at Protocol._enqueue (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+[36mapp_1           |[0m     at Protocol.handshake (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+[36mapp_1           |[0m     at Connection.connect (/usr/src/app/node_modules/mysql/lib/Connection.js:116:18)
+[36mapp_1           |[0m     at /usr/src/app/index.js:32:7
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at next (/usr/src/app/node_modules/express/lib/router/route.js:144:13)
+[36mapp_1           |[0m     at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:114:3)
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at /usr/src/app/node_modules/express/lib/router/index.js:284:15
+[36mapp_1           |[0m     at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:346:12) {
+[36mapp_1           |[0m   code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+[36mapp_1           |[0m   errno: 1251,
+[36mapp_1           |[0m   sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client',
+[36mapp_1           |[0m   sqlState: '08004',
+[36mapp_1           |[0m   fatal: true
+[36mapp_1           |[0m }
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Node.js v19.7.0
+[36mdocker-compose_app_1 exited with code 1
+[0mStopping docker-compose_mysql_server_1 ... 
+[33mmysql_server_1  |[0m 2023-03-15T18:05:39.730113Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:07.131968Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-15T18:32:08.000441Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_app_1          ... done
+Removing docker-compose_mysql_server_1 ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-15 18:32:28+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 18:32:28+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-15 18:32:28+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 18:32:29+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-15T18:32:29.127442Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:29.127563Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-15T18:32:29.134580Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:29.502481Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:30.924109Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-15 18:32:33+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-15 18:32:33+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-15T18:32:33.805414Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:33.806970Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-15T18:32:33.826025Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:34.095404Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:34.401987Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:34.402311Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:34.403997Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:34.422043Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-15T18:32:34.422699Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15 18:32:34+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-15 18:32:38+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 18:32:38+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-15T18:32:38.225168Z 11 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-15T18:32:39.894822Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15 18:32:40+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 18:32:40+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15T18:32:40.488562Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:40.489910Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-15T18:32:40.498539Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:40.724242Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:40.958701Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:40.959208Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:40.961316Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T18:32:40.984343Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[36mapp_1           |[0m listening on *:8080
+[36mapp_1           |[0m /usr/src/app/node_modules/mysql/lib/protocol/Parser.js:437
+[36mapp_1           |[0m       throw err; // Rethrow non-MySQL errors
+[36mapp_1           |[0m       ^
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+[36mapp_1           |[0m     at Sequence._packetToError (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+[36mapp_1           |[0m     at Handshake.ErrorPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+[36mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[36mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[36mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10)
+[36mapp_1           |[0m     at Protocol.write (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:88:28)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[36mapp_1           |[0m     at Socket.emit (node:events:512:28)
+[36mapp_1           |[0m     at addChunk (node:internal/streams/readable:324:12)
+[36mapp_1           |[0m     --------------------
+[36mapp_1           |[0m     at Protocol._enqueue (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+[36mapp_1           |[0m     at Protocol.handshake (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+[36mapp_1           |[0m     at Connection.connect (/usr/src/app/node_modules/mysql/lib/Connection.js:116:18)
+[36mapp_1           |[0m     at /usr/src/app/index.js:32:7
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at next (/usr/src/app/node_modules/express/lib/router/route.js:144:13)
+[36mapp_1           |[0m     at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:114:3)
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at /usr/src/app/node_modules/express/lib/router/index.js:284:15
+[36mapp_1           |[0m     at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:346:12) {
+[36mapp_1           |[0m   code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+[36mapp_1           |[0m   errno: 1251,
+[36mapp_1           |[0m   sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client',
+[36mapp_1           |[0m   sqlState: '08004',
+[36mapp_1           |[0m   fatal: true
+[36mapp_1           |[0m }
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Node.js v19.7.0
+[36mdocker-compose_app_1 exited with code 1
+[0m[32mapp_1           |[0m listening on *:8080
+[32mapp_1           |[0m Connected!
+[32mapp_1           |[0m Database mydb3 created
+[32mapp_1           |[0m /usr/src/app/index.js:33
+[32mapp_1           |[0m     if (err) throw err;
+[32mapp_1           |[0m              ^
+[32mapp_1           |[0m 
+[32mapp_1           |[0m Error: Cannot enqueue Handshake after already enqueuing a Handshake.
+[32mapp_1           |[0m     at Protocol._validateEnqueue (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:221:16)
+[32mapp_1           |[0m     at Protocol._enqueue (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:138:13)
+[32mapp_1           |[0m     at Protocol.handshake (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+[32mapp_1           |[0m     at Connection.connect (/usr/src/app/node_modules/mysql/lib/Connection.js:116:18)
+[32mapp_1           |[0m     at /usr/src/app/index.js:32:7
+[32mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[32mapp_1           |[0m     at next (/usr/src/app/node_modules/express/lib/router/route.js:144:13)
+[32mapp_1           |[0m     at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:114:3)
+[32mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[32mapp_1           |[0m     at /usr/src/app/node_modules/express/lib/router/index.js:284:15 {
+[32mapp_1           |[0m   code: 'PROTOCOL_ENQUEUE_HANDSHAKE_TWICE',
+[32mapp_1           |[0m   fatal: false
+[32mapp_1           |[0m }
+[32mapp_1           |[0m 
+[32mapp_1           |[0m Node.js v19.7.0
+[32mdocker-compose_app_1 exited with code 1
+[0m[35mapp_1           |[0m listening on *:8080
+[35mapp_1           |[0m Connected!
+[35mapp_1           |[0m /usr/src/app/node_modules/mysql/lib/protocol/Parser.js:437
+[35mapp_1           |[0m       throw err; // Rethrow non-MySQL errors
+[35mapp_1           |[0m       ^
+[35mapp_1           |[0m 
+[35mapp_1           |[0m Error: ER_DB_CREATE_EXISTS: Can't create database 'mydb3'; database exists
+[35mapp_1           |[0m     at Sequence._packetToError (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+[35mapp_1           |[0m     at Query.ErrorPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+[35mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[35mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[35mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10)
+[35mapp_1           |[0m     at Protocol.write (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+[35mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:88:28)
+[35mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[35mapp_1           |[0m     at Socket.emit (node:events:512:28)
+[35mapp_1           |[0m     at addChunk (node:internal/streams/readable:324:12)
+[35mapp_1           |[0m     --------------------
+[35mapp_1           |[0m     at Protocol._enqueue (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+[35mapp_1           |[0m     at Connection.query (/usr/src/app/node_modules/mysql/lib/Connection.js:198:25)
+[35mapp_1           |[0m     at Handshake.<anonymous> (/usr/src/app/index.js:35:9)
+[35mapp_1           |[0m     at Handshake.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[35mapp_1           |[0m     at Handshake._callback (/usr/src/app/node_modules/mysql/lib/Connection.js:488:16)
+[35mapp_1           |[0m     at Sequence.end (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+[35mapp_1           |[0m     at Sequence.OkPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+[35mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[35mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[35mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10) {
+[35mapp_1           |[0m   code: 'ER_DB_CREATE_EXISTS',
+[35mapp_1           |[0m   errno: 1007,
+[35mapp_1           |[0m   sqlMessage: "Can't create database 'mydb3'; database exists",
+[35mapp_1           |[0m   sqlState: 'HY000',
+[35mapp_1           |[0m   index: 0,
+[35mapp_1           |[0m   sql: 'CREATE DATABASE mydb3'
+[35mapp_1           |[0m }
+[35mapp_1           |[0m 
+[35mapp_1           |[0m Node.js v19.7.0
+[35mdocker-compose_app_1 exited with code 1
+[0m[34mapp_1           |[0m listening on *:8080
+[34mapp_1           |[0m Connected!
+[34mapp_1           |[0m /usr/src/app/node_modules/mysql/lib/protocol/Parser.js:437
+[34mapp_1           |[0m       throw err; // Rethrow non-MySQL errors
+[34mapp_1           |[0m       ^
+[34mapp_1           |[0m 
+[34mapp_1           |[0m Error: ER_DB_CREATE_EXISTS: Can't create database 'mydb3'; database exists
+[34mapp_1           |[0m     at Sequence._packetToError (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+[34mapp_1           |[0m     at Query.ErrorPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+[34mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[34mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[34mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10)
+[34mapp_1           |[0m     at Protocol.write (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+[34mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:88:28)
+[34mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[34mapp_1           |[0m     at Socket.emit (node:events:512:28)
+[34mapp_1           |[0m     at addChunk (node:internal/streams/readable:324:12)
+[34mapp_1           |[0m     --------------------
+[34mapp_1           |[0m     at Protocol._enqueue (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+[34mapp_1           |[0m     at Connection.query (/usr/src/app/node_modules/mysql/lib/Connection.js:198:25)
+[34mapp_1           |[0m     at Handshake.<anonymous> (/usr/src/app/index.js:35:9)
+[34mapp_1           |[0m     at Handshake.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[34mapp_1           |[0m     at Handshake._callback (/usr/src/app/node_modules/mysql/lib/Connection.js:488:16)
+[34mapp_1           |[0m     at Sequence.end (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+[34mapp_1           |[0m     at Sequence.OkPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+[34mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[34mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[34mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10) {
+[34mapp_1           |[0m   code: 'ER_DB_CREATE_EXISTS',
+[34mapp_1           |[0m   errno: 1007,
+[34mapp_1           |[0m   sqlMessage: "Can't create database 'mydb3'; database exists",
+[34mapp_1           |[0m   sqlState: 'HY000',
+[34mapp_1           |[0m   index: 0,
+[34mapp_1           |[0m   sql: 'CREATE DATABASE mydb3'
+[34mapp_1           |[0m }
+[34mapp_1           |[0m 
+[34mapp_1           |[0m Node.js v19.7.0
+[34mdocker-compose_app_1 exited with code 1
+[0mStopping docker-compose_mysql_server_1 ... 
+[33mmysql_server_1  |[0m 2023-03-15T18:32:40.985005Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:04.318282Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-15T18:42:05.821329Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_mysql_server_1 ... done
+Removing docker-compose_app_1          ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-15 18:42:28+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 18:42:28+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-15 18:42:28+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 18:42:29+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-15T18:42:29.106560Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:29.106785Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-15T18:42:29.113850Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:29.488543Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:30.693235Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-15 18:42:33+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-15 18:42:33+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-15T18:42:33.801591Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:33.802928Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-15T18:42:33.824979Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:34.084805Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:34.436289Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:34.436818Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:34.438618Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:34.458141Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-15T18:42:34.458853Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15 18:42:34+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-15 18:42:38+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 18:42:38+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-15T18:42:38.275656Z 11 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-15T18:42:39.901857Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15 18:42:40+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 18:42:40+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15T18:42:40.527679Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:40.529053Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-15T18:42:40.538420Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:40.754463Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:40.987176Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:40.988056Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:40.989346Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T18:42:41.012326Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+Stopping docker-compose_app_1          ... 
+Stopping docker-compose_mysql_server_1 ... 
+[36mapp_1           |[0m listening on *:8080
+Stopping docker-compose_app_1          ... done
+[36mdocker-compose_app_1 exited with code 137
+[0m[33mmysql_server_1  |[0m 2023-03-15T18:42:41.013071Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15T18:44:01.886821Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-15T18:44:02.444458Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_mysql_server_1 ... done
+Removing docker-compose_app_1          ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Building app
+Sending build context to Docker daemon     64kB
+Step 1/10 : FROM node
+ ---> fe9a4b9e181a
+Step 2/10 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> d86e745d4994
+Step 3/10 : RUN apt-get update && apt-get -y install vim
+ ---> Using cache
+ ---> c9d930f7cfa1
+Step 4/10 : RUN npm install express
+ ---> Using cache
+ ---> a9e9f7209cc9
+Step 5/10 : RUN npm install http
+ ---> Using cache
+ ---> bff32f2883b8
+Step 6/10 : RUN npm install tail
+ ---> Using cache
+ ---> 824a27ea5655
+Step 7/10 : RUN npm install mysql
+ ---> Using cache
+ ---> 578723c4ca1f
+Step 8/10 : RUN mkdir -p /usr/src/app
+ ---> Using cache
+ ---> ec72fd78d551
+Step 9/10 : COPY index.js /usr/src/app
+ ---> 198f60b5c92d
+Step 10/10 : CMD [ "node", "index.js" ]
+ ---> Running in 9405d856d991
+Removing intermediate container 9405d856d991
+ ---> afbe3c0ecb00
+Successfully built afbe3c0ecb00
+Successfully tagged docker-compose_app:latest
+Image for service app was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-15 18:45:25+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 18:45:26+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-15 18:45:26+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 18:45:26+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-15T18:45:26.687691Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:26.687796Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-15T18:45:26.694869Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:27.082167Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:28.214865Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-15 18:45:31+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-15 18:45:31+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-15T18:45:31.385287Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:31.386724Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-15T18:45:31.407081Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:31.679760Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:32.014088Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:32.014463Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:32.016396Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:32.034565Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-15T18:45:32.035189Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15 18:45:32+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-15 18:45:35+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 18:45:35+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-15T18:45:35.702002Z 11 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-15T18:45:36.473997Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15 18:45:36+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 18:45:36+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15T18:45:36.957360Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:36.958756Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-15T18:45:36.966641Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:37.201730Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:37.428415Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:37.429027Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:37.431016Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T18:45:37.456076Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[36mapp_1           |[0m listening on *:8080
+[36mapp_1           |[0m Connected!
+[36mapp_1           |[0m /usr/src/app/node_modules/mysql/lib/protocol/Parser.js:437
+[36mapp_1           |[0m       throw err; // Rethrow non-MySQL errors
+[36mapp_1           |[0m       ^
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Error: ER_DBACCESS_DENIED_ERROR: Access denied for user 'mylogin'@'%' to database 'mydb3'
+[36mapp_1           |[0m     at Sequence._packetToError (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+[36mapp_1           |[0m     at Query.ErrorPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Query.js:79:18)
+[36mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[36mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[36mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10)
+[36mapp_1           |[0m     at Protocol.write (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:88:28)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[36mapp_1           |[0m     at Socket.emit (node:events:512:28)
+[36mapp_1           |[0m     at addChunk (node:internal/streams/readable:324:12)
+[36mapp_1           |[0m     --------------------
+[36mapp_1           |[0m     at Protocol._enqueue (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+[36mapp_1           |[0m     at Connection.query (/usr/src/app/node_modules/mysql/lib/Connection.js:198:25)
+[36mapp_1           |[0m     at Handshake.<anonymous> (/usr/src/app/index.js:35:9)
+[36mapp_1           |[0m     at Handshake.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[36mapp_1           |[0m     at Handshake._callback (/usr/src/app/node_modules/mysql/lib/Connection.js:488:16)
+[36mapp_1           |[0m     at Sequence.end (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+[36mapp_1           |[0m     at Sequence.OkPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+[36mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[36mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[36mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10) {
+[36mapp_1           |[0m   code: 'ER_DBACCESS_DENIED_ERROR',
+[36mapp_1           |[0m   errno: 1044,
+[36mapp_1           |[0m   sqlMessage: "Access denied for user 'mylogin'@'%' to database 'mydb3'",
+[36mapp_1           |[0m   sqlState: '42000',
+[36mapp_1           |[0m   index: 0,
+[36mapp_1           |[0m   sql: 'CREATE DATABASE mydb3'
+[36mapp_1           |[0m }
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Node.js v19.7.0
+[36mdocker-compose_app_1 exited with code 1
+[0mStopping docker-compose_mysql_server_1 ... 
+[33mmysql_server_1  |[0m 2023-03-15T18:45:37.456748Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15T18:58:28.625991Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-15T18:58:29.210284Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_mysql_server_1 ... done
+Removing docker-compose_app_1          ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Building app
+Sending build context to Docker daemon  75.26kB
+Step 1/10 : FROM node
+ ---> fe9a4b9e181a
+Step 2/10 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> d86e745d4994
+Step 3/10 : RUN apt-get update && apt-get -y install vim
+ ---> Using cache
+ ---> c9d930f7cfa1
+Step 4/10 : RUN npm install express
+ ---> Using cache
+ ---> a9e9f7209cc9
+Step 5/10 : RUN npm install http
+ ---> Using cache
+ ---> bff32f2883b8
+Step 6/10 : RUN npm install tail
+ ---> Using cache
+ ---> 824a27ea5655
+Step 7/10 : RUN npm install mysql
+ ---> Using cache
+ ---> 578723c4ca1f
+Step 8/10 : RUN mkdir -p /usr/src/app
+ ---> Using cache
+ ---> ec72fd78d551
+Step 9/10 : COPY index.js /usr/src/app
+ ---> 55f2dec7ece2
+Step 10/10 : CMD [ "node", "index.js" ]
+ ---> Running in 7ed28535ba2d
+Removing intermediate container 7ed28535ba2d
+ ---> 568ec9789925
+Successfully built 568ec9789925
+Successfully tagged docker-compose_app:latest
+Image for service app was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-15 19:01:54+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 19:01:54+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-15 19:01:54+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-15 19:01:55+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-15T19:01:55.015443Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T19:01:55.015546Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-15T19:01:55.022447Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T19:01:55.398284Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T19:01:56.664110Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-15 19:01:59+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-15 19:01:59+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-15T19:01:59.735648Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T19:01:59.737023Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-15T19:01:59.757423Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T19:02:00.012680Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T19:02:00.300652Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T19:02:00.301174Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T19:02:00.302711Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T19:02:00.321281Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-15T19:02:00.321898Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15 19:02:00+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-15 19:02:03+00:00 [Note] [Entrypoint]: Creating database mydb
+[33mmysql_server_1  |[0m 2023-03-15 19:02:03+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 2023-03-15 19:02:03+00:00 [Note] [Entrypoint]: Giving user mylogin access to schema mydb
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 19:02:04+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-15T19:02:04.017150Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-15T19:02:04.820356Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-15 19:02:05+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15 19:02:05+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-15T19:02:05.269023Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-15T19:02:05.270374Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-15T19:02:05.279424Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-15T19:02:05.514503Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-15T19:02:05.730495Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-15T19:02:05.730997Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-15T19:02:05.732350Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-15T19:02:05.752896Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[36mapp_1           |[0m listening on *:8080
+[36mapp_1           |[0m /usr/src/app/node_modules/mysql/lib/protocol/Parser.js:437
+[36mapp_1           |[0m       throw err; // Rethrow non-MySQL errors
+[36mapp_1           |[0m       ^
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+[36mapp_1           |[0m     at Sequence._packetToError (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+[36mapp_1           |[0m     at Handshake.ErrorPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+[36mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[36mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[36mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10)
+[36mapp_1           |[0m     at Protocol.write (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:88:28)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[36mapp_1           |[0m     at Socket.emit (node:events:512:28)
+[36mapp_1           |[0m     at addChunk (node:internal/streams/readable:324:12)
+[36mapp_1           |[0m     --------------------
+[36mapp_1           |[0m     at Protocol._enqueue (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+[36mapp_1           |[0m     at Protocol.handshake (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+[36mapp_1           |[0m     at Connection.connect (/usr/src/app/node_modules/mysql/lib/Connection.js:116:18)
+[36mapp_1           |[0m     at /usr/src/app/index.js:25:8
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at next (/usr/src/app/node_modules/express/lib/router/route.js:144:13)
+[36mapp_1           |[0m     at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:114:3)
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at /usr/src/app/node_modules/express/lib/router/index.js:284:15
+[36mapp_1           |[0m     at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:346:12) {
+[36mapp_1           |[0m   code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+[36mapp_1           |[0m   errno: 1251,
+[36mapp_1           |[0m   sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client',
+[36mapp_1           |[0m   sqlState: '08004',
+[36mapp_1           |[0m   fatal: true
+[36mapp_1           |[0m }
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Node.js v19.7.0
+[36mdocker-compose_app_1 exited with code 1
+[0m[32mapp_1           |[0m listening on *:8080
+[32mapp_1           |[0m Connected!
+[32mapp_1           |[0m mydb is used
+Stopping docker-compose_app_1          ... 
+Stopping docker-compose_mysql_server_1 ... 
+[32mapp_1           |[0m Table customers created
+Stopping docker-compose_app_1          ... done
+[32mdocker-compose_app_1 exited with code 137
+[0m[33mmysql_server_1  |[0m 2023-03-15T19:02:05.753804Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16T11:16:30.778634Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T11:16:31.339202Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_app_1          ... done
+Removing docker-compose_mysql_server_1 ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Building app
+Sending build context to Docker daemon  87.04kB
+Step 1/10 : FROM node
+ ---> fe9a4b9e181a
+Step 2/10 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> d86e745d4994
+Step 3/10 : RUN apt-get update && apt-get -y install vim
+ ---> Using cache
+ ---> c9d930f7cfa1
+Step 4/10 : RUN npm install express
+ ---> Using cache
+ ---> a9e9f7209cc9
+Step 5/10 : RUN npm install http
+ ---> Using cache
+ ---> bff32f2883b8
+Step 6/10 : RUN npm install tail
+ ---> Using cache
+ ---> 824a27ea5655
+Step 7/10 : RUN npm install mysql
+ ---> Using cache
+ ---> 578723c4ca1f
+Step 8/10 : RUN mkdir -p /usr/src/app
+ ---> Using cache
+ ---> ec72fd78d551
+Step 9/10 : COPY index.js /usr/src/app
+ ---> 90eafd64b0d3
+Step 10/10 : CMD [ "node", "index.js" ]
+ ---> Running in f1ce32232c5e
+Removing intermediate container f1ce32232c5e
+ ---> 35993605c6d4
+Successfully built 35993605c6d4
+Successfully tagged docker-compose_app:latest
+Image for service app was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-16 11:17:33+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 11:17:33+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-16 11:17:33+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 11:17:34+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-16T11:17:34.392207Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:34.392426Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-16T11:17:34.399529Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:34.848831Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:36.084599Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-16 11:17:38+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-16 11:17:38+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-16T11:17:39.322967Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:39.326190Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-16T11:17:39.352654Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:39.719830Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:40.096513Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:40.097011Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:40.098649Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:40.119924Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-16T11:17:40.120545Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 11:17:40+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-16 11:17:43+00:00 [Note] [Entrypoint]: Creating database mydb
+[33mmysql_server_1  |[0m 2023-03-16 11:17:43+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 2023-03-16 11:17:43+00:00 [Note] [Entrypoint]: Giving user mylogin access to schema mydb
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 11:17:44+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-16T11:17:44.020534Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T11:17:45.559741Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 11:17:46+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 11:17:46+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16T11:17:46.280340Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:46.282179Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-16T11:17:46.293405Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:46.525970Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:46.787918Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:46.788775Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:46.790545Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T11:17:46.814302Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[36mapp_1           |[0m listening on *:8080
+[36mapp_1           |[0m /usr/src/app/node_modules/mysql/lib/protocol/Parser.js:437
+[36mapp_1           |[0m       throw err; // Rethrow non-MySQL errors
+[36mapp_1           |[0m       ^
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+[36mapp_1           |[0m     at Sequence._packetToError (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+[36mapp_1           |[0m     at Handshake.ErrorPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+[36mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[36mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[36mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10)
+[36mapp_1           |[0m     at Protocol.write (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:88:28)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[36mapp_1           |[0m     at Socket.emit (node:events:512:28)
+[36mapp_1           |[0m     at addChunk (node:internal/streams/readable:324:12)
+[36mapp_1           |[0m     --------------------
+[36mapp_1           |[0m     at Protocol._enqueue (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+[36mapp_1           |[0m     at Protocol.handshake (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+[36mapp_1           |[0m     at Connection.connect (/usr/src/app/node_modules/mysql/lib/Connection.js:116:18)
+[36mapp_1           |[0m     at /usr/src/app/index.js:25:8
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at next (/usr/src/app/node_modules/express/lib/router/route.js:144:13)
+[36mapp_1           |[0m     at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:114:3)
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at /usr/src/app/node_modules/express/lib/router/index.js:284:15
+[36mapp_1           |[0m     at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:346:12) {
+[36mapp_1           |[0m   code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+[36mapp_1           |[0m   errno: 1251,
+[36mapp_1           |[0m   sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client',
+[36mapp_1           |[0m   sqlState: '08004',
+[36mapp_1           |[0m   fatal: true
+[36mapp_1           |[0m }
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Node.js v19.7.0
+[36mdocker-compose_app_1 exited with code 1
+[0mStopping docker-compose_mysql_server_1 ... 
+[33mmysql_server_1  |[0m 2023-03-16T11:17:46.814971Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:13.647135Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T11:20:14.041502Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_mysql_server_1 ... done
+Removing docker-compose_app_1          ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-16 11:20:27+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 11:20:28+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-16 11:20:28+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 11:20:28+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-16T11:20:28.651802Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:28.651908Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-16T11:20:28.658765Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:29.037555Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:30.038601Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-16 11:20:33+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-16 11:20:33+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-16T11:20:33.373071Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:33.374835Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-16T11:20:33.398354Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:33.750082Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:34.102655Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:34.103158Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:34.104639Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:34.126454Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-16T11:20:34.127159Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 11:20:34+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-16 11:20:37+00:00 [Note] [Entrypoint]: Creating database mydb
+[33mmysql_server_1  |[0m 2023-03-16 11:20:37+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 2023-03-16 11:20:37+00:00 [Note] [Entrypoint]: Giving user mylogin access to schema mydb
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 11:20:37+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-16T11:20:37.910603Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T11:20:41.507266Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 11:20:41+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 11:20:41+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16T11:20:42.160233Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:42.161600Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-16T11:20:42.169142Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:42.395206Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:42.615991Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:42.616484Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:42.618005Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T11:20:42.639479Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[36mapp_1           |[0m listening on *:8080
+[36mapp_1           |[0m /usr/src/app/node_modules/mysql/lib/protocol/Parser.js:437
+[36mapp_1           |[0m       throw err; // Rethrow non-MySQL errors
+[36mapp_1           |[0m       ^
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+[36mapp_1           |[0m     at Sequence._packetToError (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+[36mapp_1           |[0m     at Handshake.ErrorPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+[36mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[36mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[36mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10)
+[36mapp_1           |[0m     at Protocol.write (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:88:28)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[36mapp_1           |[0m     at Socket.emit (node:events:512:28)
+[36mapp_1           |[0m     at addChunk (node:internal/streams/readable:324:12)
+[36mapp_1           |[0m     --------------------
+[36mapp_1           |[0m     at Protocol._enqueue (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+[36mapp_1           |[0m     at Protocol.handshake (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+[36mapp_1           |[0m     at Connection.connect (/usr/src/app/node_modules/mysql/lib/Connection.js:116:18)
+[36mapp_1           |[0m     at /usr/src/app/index.js:25:8
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at next (/usr/src/app/node_modules/express/lib/router/route.js:144:13)
+[36mapp_1           |[0m     at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:114:3)
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at /usr/src/app/node_modules/express/lib/router/index.js:284:15
+[36mapp_1           |[0m     at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:346:12) {
+[36mapp_1           |[0m   code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+[36mapp_1           |[0m   errno: 1251,
+[36mapp_1           |[0m   sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client',
+[36mapp_1           |[0m   sqlState: '08004',
+[36mapp_1           |[0m   fatal: true
+[36mapp_1           |[0m }
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Node.js v19.7.0
+[36mdocker-compose_app_1 exited with code 1
+[0m[33mmysql_server_1  |[0m 2023-03-16T11:20:42.640103Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16T11:23:04.508361Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T11:23:04.909771Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mStopping docker-compose_mysql_server_1 ... 
+Stopping docker-compose_mysql_server_1 ... done
+Removing docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_mysql_server_1 ... done
+Removing docker-compose_app_1          ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-16 11:24:23+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 11:24:23+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-16 11:24:23+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 11:24:23+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-16T11:24:24.000254Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:24.000365Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-16T11:24:24.007739Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:24.383651Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:25.619225Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-16 11:24:28+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-16 11:24:28+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-16T11:24:28.691516Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:28.693677Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-16T11:24:28.714835Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:29.015208Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:29.353774Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:29.354210Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:29.355710Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:29.375913Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-16T11:24:29.376702Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 11:24:29+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-16 11:24:33+00:00 [Note] [Entrypoint]: Creating database mydb
+[33mmysql_server_1  |[0m 2023-03-16 11:24:33+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 2023-03-16 11:24:33+00:00 [Note] [Entrypoint]: Giving user mylogin access to schema mydb
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 11:24:33+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-16T11:24:33.247229Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T11:24:34.830074Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 11:24:35+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 11:24:35+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16T11:24:35.501382Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:35.502811Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-16T11:24:35.512321Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:35.737467Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:35.973041Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:35.973597Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:35.975295Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T11:24:35.998549Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[36mapp_1           |[0m listening on *:8080
+[36mapp_1           |[0m Connected!
+[36mapp_1           |[0m mydb is used
+[36mapp_1           |[0m Table customers created
+[36mdocker-compose_app_1 exited with code 137
+[0m[33mmysql_server_1  |[0m 2023-03-16T11:24:35.999268Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16T12:34:22.868295Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T12:34:24.127313Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mCreating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-16 12:44:40+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 12:44:40+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-16 12:44:40+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 12:44:41+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-16T12:44:41.158472Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:41.158581Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-16T12:44:41.165500Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:41.525154Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:42.880849Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-16 12:44:45+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-16 12:44:45+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-16T12:44:45.827265Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:45.828678Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-16T12:44:45.849696Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:46.136874Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:46.442356Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:46.442965Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:46.445015Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:46.464124Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-16T12:44:46.464782Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 12:44:46+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-16 12:44:50+00:00 [Note] [Entrypoint]: Creating database mydb
+[33mmysql_server_1  |[0m 2023-03-16 12:44:50+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 2023-03-16 12:44:50+00:00 [Note] [Entrypoint]: Giving user mylogin access to schema mydb
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 12:44:50+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-16T12:44:50.820791Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T12:44:51.937500Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 12:44:52+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 12:44:52+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16T12:44:53.094049Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:53.095622Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-16T12:44:53.105099Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:53.331478Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:53.567078Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:53.567597Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:53.569045Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T12:44:53.593057Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+Stopping docker-compose_app_1          ... 
+Stopping docker-compose_mysql_server_1 ... 
+[36mapp_1           |[0m listening on *:8080
+Stopping docker-compose_app_1          ... done
+[36mdocker-compose_app_1 exited with code 137
+[0m[33mmysql_server_1  |[0m 2023-03-16T12:44:53.593609Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16T12:46:03.760009Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T12:46:05.023163Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_mysql_server_1 ... done
+Removing docker-compose_app_1          ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-16 14:26:01+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 14:26:01+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-16 14:26:02+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 14:26:02+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-16T14:26:02.512880Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:02.513219Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-16T14:26:02.521276Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:02.935404Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:04.147572Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-16 14:26:07+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-16 14:26:07+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-16T14:26:07.332693Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:07.338819Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-16T14:26:07.375594Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:07.662232Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:07.993556Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:07.993979Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:07.995140Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:08.017511Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-16T14:26:08.018177Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 14:26:08+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-16 14:26:12+00:00 [Note] [Entrypoint]: Creating database mydb
+[33mmysql_server_1  |[0m 2023-03-16 14:26:12+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 2023-03-16 14:26:12+00:00 [Note] [Entrypoint]: Giving user mylogin access to schema mydb
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 14:26:12+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-16T14:26:12.540327Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T14:26:13.498677Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 14:26:13+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 14:26:13+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16T14:26:13.822596Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:13.824350Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-16T14:26:13.832898Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:14.077396Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:14.332011Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:14.332796Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:14.334271Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T14:26:14.363531Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[36mapp_1           |[0m listening on *:8080
+[36mapp_1           |[0m Connected!
+[36mapp_1           |[0m mydb is used
+Stopping docker-compose_app_1          ... 
+Stopping docker-compose_mysql_server_1 ... 
+[36mapp_1           |[0m Table customers created
+Stopping docker-compose_app_1          ... done
+[36mdocker-compose_app_1 exited with code 137
+[0m[33mmysql_server_1  |[0m 2023-03-16T14:26:14.364144Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16T14:30:20.271786Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T14:30:20.855692Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_mysql_server_1 ... done
+Removing docker-compose_app_1          ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-16 14:31:02+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 14:31:03+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-16 14:31:03+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 14:31:04+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-16T14:31:04.093845Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:04.093955Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-16T14:31:04.101525Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:04.512809Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:05.623701Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-16 14:31:08+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-16 14:31:08+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-16T14:31:08.883828Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:08.885731Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-16T14:31:08.906839Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:09.198466Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:09.555411Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:09.555912Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:09.557722Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:09.577720Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-16T14:31:09.578496Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 14:31:09+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-16 14:31:14+00:00 [Note] [Entrypoint]: Creating database mydb
+[33mmysql_server_1  |[0m 2023-03-16 14:31:14+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 2023-03-16 14:31:14+00:00 [Note] [Entrypoint]: Giving user mylogin access to schema mydb
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 14:31:14+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-16T14:31:14.306378Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T14:31:15.040391Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 14:31:15+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 14:31:15+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16T14:31:15.586862Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:15.588418Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-16T14:31:15.600528Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:15.838763Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:16.106222Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:16.106726Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:16.108792Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T14:31:16.135435Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+Stopping docker-compose_app_1          ... 
+Stopping docker-compose_mysql_server_1 ... 
+[36mapp_1           |[0m listening on *:8080
+Stopping docker-compose_app_1          ... done
+[36mdocker-compose_app_1 exited with code 137
+[0m[33mmysql_server_1  |[0m 2023-03-16T14:31:16.136359Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:22.745897Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T14:39:23.703204Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_mysql_server_1 ... done
+Removing docker-compose_app_1          ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-16 14:39:43+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 14:39:44+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-16 14:39:44+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 14:39:45+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-16T14:39:45.113103Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:45.113212Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-16T14:39:45.121131Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:45.560087Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:47.125183Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-16 14:39:50+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-16 14:39:50+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-16T14:39:50.963738Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:50.965252Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-16T14:39:50.989212Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:51.283521Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:51.632800Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:51.633132Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:51.634980Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:51.655873Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-16T14:39:51.665734Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 14:39:51+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-16 14:39:56+00:00 [Note] [Entrypoint]: Creating database mydb
+[33mmysql_server_1  |[0m 2023-03-16 14:39:56+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 2023-03-16 14:39:56+00:00 [Note] [Entrypoint]: Giving user mylogin access to schema mydb
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 14:39:56+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-16T14:39:56.252807Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T14:39:57.124336Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 14:39:57+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 14:39:57+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16T14:39:57.527004Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:57.528467Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-16T14:39:57.537386Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:57.788275Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:58.047745Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:58.048186Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:58.049593Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T14:39:58.075628Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+Stopping docker-compose_app_1          ... 
+Stopping docker-compose_mysql_server_1 ... 
+[36mapp_1           |[0m listening on *:8080
+Stopping docker-compose_app_1          ... done
+[36mdocker-compose_app_1 exited with code 137
+[0m[33mmysql_server_1  |[0m 2023-03-16T14:39:58.076179Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16T14:45:48.903303Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T14:45:49.494651Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_app_1          ... done
+Removing docker-compose_mysql_server_1 ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-16 14:48:07+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 14:48:08+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-16 14:48:08+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 14:48:08+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-16T14:48:08.737710Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:08.738036Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-16T14:48:08.745329Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:09.156285Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:10.670133Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-16 14:48:13+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-16 14:48:13+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-16T14:48:13.545331Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:13.547118Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-16T14:48:13.567832Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:13.855462Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:14.196128Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:14.196775Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:14.198261Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:14.218715Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-16T14:48:14.219422Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 14:48:14+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-16 14:48:18+00:00 [Note] [Entrypoint]: Creating database mydb
+[33mmysql_server_1  |[0m 2023-03-16 14:48:18+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 2023-03-16 14:48:18+00:00 [Note] [Entrypoint]: Giving user mylogin access to schema mydb
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 14:48:18+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-16T14:48:18.336295Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T14:48:19.682946Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 14:48:20+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 14:48:20+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16T14:48:20.614674Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:20.616385Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-16T14:48:20.624630Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:20.869686Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:21.117761Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:21.118246Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:21.119733Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T14:48:21.148827Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[36mapp_1           |[0m listening on *:8080
+[36mapp_1           |[0m /usr/src/app/node_modules/mysql/lib/protocol/Parser.js:437
+[36mapp_1           |[0m       throw err; // Rethrow non-MySQL errors
+[36mapp_1           |[0m       ^
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
+[36mapp_1           |[0m     at Sequence._packetToError (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+[36mapp_1           |[0m     at Handshake.ErrorPacket (/usr/src/app/node_modules/mysql/lib/protocol/sequences/Handshake.js:123:18)
+[36mapp_1           |[0m     at Protocol._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:291:23)
+[36mapp_1           |[0m     at Parser._parsePacket (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:433:10)
+[36mapp_1           |[0m     at Parser.write (/usr/src/app/node_modules/mysql/lib/protocol/Parser.js:43:10)
+[36mapp_1           |[0m     at Protocol.write (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:88:28)
+[36mapp_1           |[0m     at Socket.<anonymous> (/usr/src/app/node_modules/mysql/lib/Connection.js:526:10)
+[36mapp_1           |[0m     at Socket.emit (node:events:512:28)
+[36mapp_1           |[0m     at addChunk (node:internal/streams/readable:324:12)
+[36mapp_1           |[0m     --------------------
+[36mapp_1           |[0m     at Protocol._enqueue (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+[36mapp_1           |[0m     at Protocol.handshake (/usr/src/app/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+[36mapp_1           |[0m     at Connection.connect (/usr/src/app/node_modules/mysql/lib/Connection.js:116:18)
+[36mapp_1           |[0m     at /usr/src/app/index.js:25:8
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at next (/usr/src/app/node_modules/express/lib/router/route.js:144:13)
+[36mapp_1           |[0m     at Route.dispatch (/usr/src/app/node_modules/express/lib/router/route.js:114:3)
+[36mapp_1           |[0m     at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+[36mapp_1           |[0m     at /usr/src/app/node_modules/express/lib/router/index.js:284:15
+[36mapp_1           |[0m     at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:346:12) {
+[36mapp_1           |[0m   code: 'ER_NOT_SUPPORTED_AUTH_MODE',
+[36mapp_1           |[0m   errno: 1251,
+[36mapp_1           |[0m   sqlMessage: 'Client does not support authentication protocol requested by server; consider upgrading MySQL client',
+[36mapp_1           |[0m   sqlState: '08004',
+[36mapp_1           |[0m   fatal: true
+[36mapp_1           |[0m }
+[36mapp_1           |[0m 
+[36mapp_1           |[0m Node.js v19.7.0
+[36mdocker-compose_app_1 exited with code 1
+[0mStopping docker-compose_mysql_server_1 ... 
+[33mmysql_server_1  |[0m 2023-03-16T14:48:21.149684Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:09.706069Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T14:51:10.367433Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_app_1          ... done
+Removing docker-compose_mysql_server_1 ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-16 14:51:25+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 14:51:26+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-16 14:51:26+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 14:51:27+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-16T14:51:27.098528Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:27.098754Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-16T14:51:27.107082Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:27.519069Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:28.849168Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-16 14:51:31+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-16 14:51:31+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-16T14:51:31.952057Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:31.953707Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-16T14:51:31.973832Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:32.255478Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:32.591695Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:32.592123Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:32.593455Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:32.613532Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-16T14:51:32.614373Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 14:51:32+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-16 14:51:37+00:00 [Note] [Entrypoint]: Creating database mydb
+[33mmysql_server_1  |[0m 2023-03-16 14:51:37+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 2023-03-16 14:51:37+00:00 [Note] [Entrypoint]: Giving user mylogin access to schema mydb
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 14:51:37+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-16T14:51:37.352749Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T14:51:38.098573Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 14:51:38+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 14:51:38+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16T14:51:38.623044Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:38.624564Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-16T14:51:38.633446Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:38.877624Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:39.139377Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:39.140083Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:39.141819Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T14:51:39.167579Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+[36mapp_1           |[0m listening on *:8080
+[36mapp_1           |[0m Connected!
+[36mapp_1           |[0m mydb is used
+Stopping docker-compose_app_1          ... 
+Stopping docker-compose_mysql_server_1 ... 
+[36mapp_1           |[0m Table customers created
+Stopping docker-compose_app_1          ... done
+[36mdocker-compose_app_1 exited with code 137
+[0m[33mmysql_server_1  |[0m 2023-03-16T14:51:39.168237Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16T14:54:59.469209Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T14:55:00.645558Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_app_1          ... done
+Removing docker-compose_mysql_server_1 ... done
+Removing network docker-compose_default
+Creating network "docker-compose_default" with the default driver
+Creating docker-compose_mysql_server_1 ... 
+Creating docker-compose_mysql_server_1 ... done
+Creating docker-compose_app_1          ... 
+Creating docker-compose_app_1          ... done
+Attaching to docker-compose_mysql_server_1, docker-compose_app_1
+[33mmysql_server_1  |[0m 2023-03-16 16:15:40+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 16:15:41+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[33mmysql_server_1  |[0m 2023-03-16 16:15:41+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.32-1.el8 started.
+[33mmysql_server_1  |[0m 2023-03-16 16:15:41+00:00 [Note] [Entrypoint]: Initializing database files
+[33mmysql_server_1  |[0m 2023-03-16T16:15:41.868118Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:41.868224Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.32) initializing of server in progress as process 78
+[33mmysql_server_1  |[0m 2023-03-16T16:15:41.875690Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:42.297613Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:43.607017Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+[33mmysql_server_1  |[0m 2023-03-16 16:15:46+00:00 [Note] [Entrypoint]: Database files initialized
+[33mmysql_server_1  |[0m 2023-03-16 16:15:46+00:00 [Note] [Entrypoint]: Starting temporary server
+[33mmysql_server_1  |[0m 2023-03-16T16:15:46.758790Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:46.762974Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 119
+[33mmysql_server_1  |[0m 2023-03-16T16:15:46.787283Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:47.097798Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:47.455079Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:47.455394Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:47.457082Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:47.477283Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+[33mmysql_server_1  |[0m 2023-03-16T16:15:47.478110Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 16:15:47+00:00 [Note] [Entrypoint]: Temporary server started.
+[33mmysql_server_1  |[0m '/var/lib/mysql/mysql.sock' -> '/var/run/mysqld/mysqld.sock'
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+[33mmysql_server_1  |[0m 2023-03-16 16:15:52+00:00 [Note] [Entrypoint]: Creating database mydb
+[33mmysql_server_1  |[0m 2023-03-16 16:15:52+00:00 [Note] [Entrypoint]: Creating user mylogin
+[33mmysql_server_1  |[0m 2023-03-16 16:15:52+00:00 [Note] [Entrypoint]: Giving user mylogin access to schema mydb
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 16:15:52+00:00 [Note] [Entrypoint]: Stopping temporary server
+[33mmysql_server_1  |[0m 2023-03-16T16:15:52.223354Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T16:15:53.939357Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16 16:15:54+00:00 [Note] [Entrypoint]: Temporary server stopped
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16 16:15:54+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+[33mmysql_server_1  |[0m 
+[33mmysql_server_1  |[0m 2023-03-16T16:15:54.498201Z 0 [Warning] [MY-011068] [Server] The syntax '--skip-host-cache' is deprecated and will be removed in a future release. Please use SET GLOBAL host_cache_size=0 instead.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:54.500052Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.32) starting as process 1
+[33mmysql_server_1  |[0m 2023-03-16T16:15:54.510495Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:54.763327Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:55.028902Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:55.030247Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:55.032738Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+[33mmysql_server_1  |[0m 2023-03-16T16:15:55.070932Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+Stopping docker-compose_app_1          ... 
+Stopping docker-compose_mysql_server_1 ... 
+[36mapp_1           |[0m listening on *:8080
+Stopping docker-compose_app_1          ... done
+[36mdocker-compose_app_1 exited with code 137
+[0m[33mmysql_server_1  |[0m 2023-03-16T16:15:55.071972Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.32'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+[33mmysql_server_1  |[0m 2023-03-16T16:21:25.833731Z 0 [System] [MY-013172] [Server] Received SHUTDOWN from user <via user signal>. Shutting down mysqld (Version: 8.0.32).
+[33mmysql_server_1  |[0m 2023-03-16T16:21:26.571146Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.32)  MySQL Community Server - GPL.
+Stopping docker-compose_mysql_server_1 ... done
+[33mdocker-compose_mysql_server_1 exited with code 0
+[0mRemoving docker-compose_app_1          ... 
+Removing docker-compose_mysql_server_1 ... 
+Removing docker-compose_mysql_server_1 ... done
+Removing docker-compose_app_1          ... done
+Removing network docker-compose_default

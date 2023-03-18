@@ -1,0 +1,19 @@
+FROM mysql
+
+COPY .my.cnf /root/
+
+RUN chmod 600 /root/.my.cnf
+
+COPY file2.sql /
+
+COPY file.sql / 
+
+COPY databases.sql /
+
+WORKDIR /
+
+RUN mysql -h localhost -u root < file.sql
+
+RUN mysql -h localhost -u root < databases.sql > result_databases.txt
+
+
