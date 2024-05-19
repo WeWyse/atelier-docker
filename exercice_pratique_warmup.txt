@@ -2,7 +2,7 @@ docker pull nginx
 
 docker image ls  ( ou docker images )
 
-docker run --name nginx-service -v /Users/docker:/Users/docker -d -p 80:80 nginx
+docker run --name nginx-service -v /usr/docker:/usr/docker -d -p 80:80 nginx
 
 docker ps -a ( ou docker container ls ) 
 
