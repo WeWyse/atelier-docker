@@ -1,12 +1,8 @@
 ### DOCKERFILE ###
 
-docker build /Users/stephanelenglet/Documents/workspace/atelier-docker/nodejs --tag nodejs-v0
+docker build /usr/docker/atelier-docker/nodejs --tag nodejs-v0
 
-(  !!!! remplacer /Users/stephanelenglet/Documents/workspace/atelier-docker/nodejs par votre path vers le Dockerfile nodejs )
-
-docker build /Users/stephanelenglet/Documents/workspace/atelier-docker/mysql --tag mysql-v0
-
-(  !!!! remplacer /Users/stephanelenglet/Documents/workspace/atelier-docker/mysql par votre path vers le Dockerfile mysql )
+docker build /usr/docker//atelier-docker/mysql --tag mysql-v0
 
 docker images 
 

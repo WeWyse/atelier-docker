@@ -1,5 +1,7 @@
 FROM node 
 
+WORKDIR /usr/src/app
+
 RUN apt-get update \ 
 && apt-get -y install vim 
 
@@ -17,4 +19,3 @@ COPY index.js /usr/src/app
 
 CMD [ "node", "index.js" ]
 
-WORKDIR /usr/src/app

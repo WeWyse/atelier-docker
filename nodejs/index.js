@@ -6,14 +6,14 @@ var http = require('http').createServer(app);
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: "172.17.0.2",
+  host: "172.17.0.3",
   user: "root",
   password: "mypassword"
 });
 
 
 var con2 = mysql.createConnection({
-  host: "172.17.0.2",
+  host: "172.17.0.3",
   user: "root",
   password: "mypassword"
 });
