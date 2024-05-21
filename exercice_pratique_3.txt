@@ -7,7 +7,7 @@ docker images
 
 docker ps -a
 
-docker exec -ti docker-compose_mysql_server_1 sh
+docker exec -ti docker-compose_mysql_server_3 sh
 
 >> mysql -u root -p ( puis saisir ile mode de passe suivant aprés le prompt : mypassord )
 >> ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY 'mypassword';

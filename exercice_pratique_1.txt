@@ -2,15 +2,15 @@
 
 docker pull node
 
-docker pull mysql
+docker pull mysql:8.0.28
 
 docker images
 
-docker run --name mysql-service-1 -v /Users/docker:/Users/docker -d --env="MYSQL_ROOT_PASSWORD=mypassword" <image id mysql>
+docker run --name mysql-service-1 -v /usr/docker:/usr/docker -d --env="MYSQL_ROOT_PASSWORD=mypassword" <image id mysql>
 
 docker exec -ti mysql-service-1 sh
 
->> mysql -u root -p ( puis saisir ile mode de passe suivant aprés le prompt : mypassord )
+>> mysql -u root -p ( puis saisir le mode de passe suivant aprés le prompt : mypassord )
 >> show databases;
 >> ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY 'mypassword';
 >> flush privileges;
@@ -19,18 +19,20 @@ sortir du container avec : exit
 
 docker inspect <id container mysql> | grep -i IPAdd ( noter la valeur IPAddress )
 
-docker run --name nodejs-service-1 -v /Users/docker:/Users/docker -d -p 8080:8080 <imageid node>
+docker run --name nodejs-service-1 -v /usr/docker:/usr/docker -d -p 8080:8080 <imageid node>
 
 docker exec -ti nodejs-service-1 sh
 
+>> mkdir -p /usr/src/app
+>> cd /usr/src/app
 >> apt-get update
 >> apt-get -y install vim
 >> npm install http
 >> npm install express
 >> npm install mysql
->> mkdir -p /usr/src/app
->> cd /usr/src/app
 >> vi index.js et copier coller le code du fichier index.js recupéré depuis git
 >> remplacer dans le code par la valeur IPAddress récupéré plus haut
+
+>> exit 
 
 docker container restart nodejs-service-1

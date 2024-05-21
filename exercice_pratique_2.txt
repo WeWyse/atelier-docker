@@ -10,7 +10,7 @@ docker build /Users/stephanelenglet/Documents/workspace/atelier-docker/mysql --t
 
 docker images 
 
-docker run --name mysql-service-2 -v /Users/docker:/Users/docker -d -p --env="MYSQL_ROOT_PASSWORD=mypassword" mysql-v0
+docker run --name mysql-service-2 -v /usr/docker:/usr/docker -d -p --env="MYSQL_ROOT_PASSWORD=mypassword" mysql-v0
 
 >> Plus besoin d'aller ALTER / flush privileges !!!
 
@@ -18,7 +18,7 @@ sortir du container avec : exit
 
 docker inspect mysql-service-2 | grep -i IPAdd ( noter la valeur IPAddress )
 
-docker run --name nodejs-service-2 -v /Users/docker:/Users/docker -d -p 8081:8080 <imageid node>
+docker run --name nodejs-service-2 -v /usr/docker:/usr/docker -d -p 8081:8080 <imageid node>
 
 docker exec -ti nodejs-service-2 sh
 
