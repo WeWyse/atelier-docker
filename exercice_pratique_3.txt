@@ -1,18 +1,17 @@
 #### Docker compose #####
 
-
-nohup docker-compose up &
+nohup /usr/docker/.docker/cli-plugins/docker-compose up &
 
 docker images
 
 docker ps -a
 
-docker exec -ti docker-compose_mysql_server_3 sh
+docker exec -ti docker-compose_mysql_server_1 sh
 
 >> mysql -u root -p ( puis saisir ile mode de passe suivant aprés le prompt : mypassord )
->> ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY 'mypassword';
+>> ALTER USER 'my_login' IDENTIFIED WITH mysql_native_password BY 'mypassword';
 >> flush privileges;
 
 pour stopper
 
-nohup docker-compose down &
+nohup /usr/docker/.docker/cli-plugins/docker-compose down &

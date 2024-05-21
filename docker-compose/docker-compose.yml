@@ -11,7 +11,7 @@ services:
     depends_on:
       - mysql_server
   mysql_server:
-    image: mysql
+    image: mysql:8.0.28
     environment:
       - MYSQL_DATABASE=mydb
       - MYSQL_ROOT_PASSWORD=mypassword

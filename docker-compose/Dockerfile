@@ -1,5 +1,7 @@
 FROM node 
 
+RUN mkdir -p /usr/src/app
+
 WORKDIR /usr/src/app
 
 RUN apt-get update \ 
@@ -12,8 +14,6 @@ RUN npm install http
 RUN npm install tail
 
 RUN npm install mysql 
-
-RUN mkdir -p /usr/src/app
 
 COPY index.js /usr/src/app
 
